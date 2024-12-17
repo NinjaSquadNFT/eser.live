@@ -39,28 +39,28 @@ To get started:
    git clone https://github.com/eser/eser.live.git
    cd eser.live
    ```
-1. Create a new `.env` file:
+2. Create a new `.env` file:
    ```
    POSTGRES_CONNSTR=postgres://postgres:s3cr3t@0.0.0.0:5432/postgres
    GITHUB_CLIENT_ID=
    GITHUB_CLIENT_SECRET=
    YOUTUBE_API_KEY=
    ```
-1. Navigate to GitHub's [**New OAuth Application** page](https://github.com/settings/applications/new).
-1. Set **Application name** to your desired application name. E.g. `ACME, Inc`.
-1. Set **Homepage URL** to `http://localhost:8000`.
-1. Set **Authorization callback URL** to `http://localhost:8000/auth/callback`.
-1. Click **Register application**.
-1. Copy the **Client ID** value to the `.env` file:
+3. Navigate to GitHub's [**New OAuth Application** page](https://github.com/settings/applications/new).
+4. Set **Application name** to your desired application name. E.g. `ACME, Inc`.
+5. Set **Homepage URL** to `http://localhost:8000`.
+6. Set **Authorization callback URL** to `http://localhost:8000/auth/callback`.
+7. Click **Register application**.
+8. Copy the **Client ID** value to the `.env` file:
    ```bash
    GITHUB_CLIENT_ID=<GitHub OAuth application client ID>
    ```
-1. On the same web page, click **Generate a new client secret**.
-1. Copy the **Client secret** value to the `.env` file on a new line:
+9. On the same web page, click **Generate a new client secret**.
+10. Copy the **Client secret** value to the `.env` file on a new line:
    ```bash
    GITHUB_CLIENT_SECRET=<GitHub OAuth application client secret>
    ```
-1. Start the server:
+11. Start the server:
    ```bash
    deno task start
    ```
