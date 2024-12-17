@@ -34,11 +34,11 @@ export const handler: Handlers<HandlerResult, State> = {
 export default function (props: PageProps<HandlerResult, State>) {
   return (
     <>
-      <Head title="Haberler" href={props.url.href} />
+      <Head title="News" href={props.url.href} />
       <main>
         <div class="content-area">
-          <h1>Haberler</h1>
-          <a href="/news/post/" class="btn btn-primary mb-4" disabled={true}>Yeni Haber Ekle</a>
+          <h1>News</h1>
+          <a href="/news/create" class="btn btn-primary mb-4">Add News</a>
           <StoryList
             initialItems={props.data.payload.items}
             initialNextCursor={props.data.payload.nextCursor}
