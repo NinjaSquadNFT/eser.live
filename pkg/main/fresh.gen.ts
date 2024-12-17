@@ -19,6 +19,7 @@ import * as $events_index from "./routes/events/index.tsx";
 import * as $events_upcoming from "./routes/events/upcoming.ts";
 import * as $index from "./routes/index.tsx";
 import * as $news_slug_ from "./routes/news/[slug].tsx";
+import * as $news_create from "./routes/news/create.tsx";
 import * as $news_feed from "./routes/news/feed.ts";
 import * as $news_index from "./routes/news/index.tsx";
 import * as $news_post from "./routes/news/post.tsx";
@@ -43,6 +44,7 @@ import * as $articles_islands_list from "./routes/articles/(_islands)/list.tsx";
 import * as $dash_islands_chart from "./routes/dash/(_islands)/chart.tsx";
 import * as $events_islands_list from "./routes/events/(_islands)/list.tsx";
 import * as $news_islands_list from "./routes/news/(_islands)/list.tsx";
+import * as $news_islands_news_form_island from "./routes/news/(_islands)/news-form-island.tsx";
 import * as $profiles_islands_list from "./routes/profiles/(_islands)/list.tsx";
 import * as $projects_islands_list from "./routes/projects/(_islands)/list.tsx";
 import * as $qa_islands_list from "./routes/qa/(_islands)/list.tsx";
@@ -70,6 +72,7 @@ const manifest = {
     "./routes/events/upcoming.ts": $events_upcoming,
     "./routes/index.tsx": $index,
     "./routes/news/[slug].tsx": $news_slug_,
+    "./routes/news/create.tsx": $news_create,
     "./routes/news/feed.ts": $news_feed,
     "./routes/news/index.tsx": $news_index,
     "./routes/news/post.tsx": $news_post,
@@ -96,6 +99,7 @@ const manifest = {
     "./routes/dash/(_islands)/chart.tsx": $dash_islands_chart,
     "./routes/events/(_islands)/list.tsx": $events_islands_list,
     "./routes/news/(_islands)/list.tsx": $news_islands_list,
+    "./routes/news/(_islands)/news-form-island.tsx": $news_islands_news_form_island,
     "./routes/profiles/(_islands)/list.tsx": $profiles_islands_list,
     "./routes/projects/(_islands)/list.tsx": $projects_islands_list,
     "./routes/qa/(_islands)/list.tsx": $qa_islands_list,

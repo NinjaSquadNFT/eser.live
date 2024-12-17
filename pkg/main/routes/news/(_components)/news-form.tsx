@@ -1,5 +1,3 @@
-import { StoryPartial } from "@/pkg/main/data/story/types.ts";
-
 export function NewsForm() {
   return (
     <form method="POST" class="space-y-4">
