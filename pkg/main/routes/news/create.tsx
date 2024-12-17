@@ -3,10 +3,10 @@ import { storyRepository } from "@/pkg/main/data/story/repository.ts";
 import { assertLoggedIn, type State } from "@/pkg/main/plugins/session.ts";
 import { Head } from "@/pkg/main/routes/(common)/(_components)/head.tsx";
 import { NewsForm } from "./(_components)/news-form.tsx";
-import { ulid } from "ulid";
+import * as ulid from "@std/ulid";
 
 export const handler: Handlers<null, State> = {
-  async GET(req, ctx) {
+  async GET(_req, ctx) {
     await assertLoggedIn(ctx);
     return ctx.render();
   },
