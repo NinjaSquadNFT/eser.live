@@ -3,7 +3,7 @@ import { storyRepository } from "@/pkg/main/data/story/repository.ts";
 import { assertLoggedIn, type State } from "@/pkg/main/plugins/session.ts";
 import { Head } from "@/pkg/main/routes/(common)/(_components)/head.tsx";
 import { NewsForm } from "./(_components)/news-form.tsx";
-import * as ulid from "@std/ulid";
+import * as ulid from "jsr:@std/ulid@^1.0.0";
 
 export const handler: Handlers<null, State> = {
   async GET(_req, ctx) {
@@ -16,7 +16,7 @@ export const handler: Handlers<null, State> = {
     const form = await req.formData();
 
     const story = {
-      id: ulid(),
+      id: ulid.ulid(),
       kind: "news",
       status: form.get("status"),
       is_featured: form.has("is_featured"),
